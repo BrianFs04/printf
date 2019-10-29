@@ -3,7 +3,7 @@
 /**
  * filler - filler structure
  * @cha: characters to receive
- * Return: Null
+ * Return: Null if does not use a special
  */
 int (*filler(char cha))(va_list valist)
 {
