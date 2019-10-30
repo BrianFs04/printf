@@ -12,13 +12,9 @@ When using printf (instead of sprintf/snprintf) you have to provide our own `_pu
 
 ## Usage
 
-This project are based on structure and function pointer use
-```C
+This project is based on structure and function pointer use
 
-
-```
-
-Usage is 1:1 like the according stdio.h library version:
+Usage is 1:1 like the according holberton.h library version:
 ```C
 int (*filler(char cha))(va_list);
 int prt_c(va_list);
