@@ -1,0 +1,77 @@
+.TH man 3 "29 Oct 2019" "0.32" "_printf man page"
+.SH NAME
+printf customized - format and print char and data
+.SH SYNOPSIS
+_printf FORMAT [ARGUMENT]
+.SH DESCRIPTION
+Print ARGUMENT(s) according to FORMAT.
+
+.SH OPTIONS
+.TP
+.B Flag characters
+
+- The character % is followed by the next functions
+
+.B %
+- Print the character %
+
+.B c
+- Print the character argument
+
+.B s
+- Print the string argument
+
+.B i
+- Print the decimal argument
+
+.B d
+- Print the decimal argument
+
+.SH EXAMPLES
+
+.B To print a name of a person
+
+#include <stdio.h>
+#include "holberton.h"
+
+char *name;
+name = "Robert"
+
+_printf("%s", name);
+
+.B To print a number
+
+#include <stdio.h>
+#include "holberton.h"
+
+int n;
+n = 123
+
+_printf("%d", n);
+
+.B It also works with
+
+#include <stdio.h>
+#include "holberton.h"
+
+int n;
+n = 123
+
+_printf("%i", n);
+
+
+.B This configuration prints the % and next string
+
+#include <stdio.h>
+#include "holberton.h"
+
+_printf("%yd");
+
+.SH SEE ALSO
+.I printf(3), _putchar, write, Betty
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Braian Florez and Pilar Pinto.
+.SH SCHOOL
+Holberton School Bogota
